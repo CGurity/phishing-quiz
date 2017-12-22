@@ -72,6 +72,16 @@ hr {
   overflow: hidden;
 }
 
+.url_mobile {
+  background-color: white;
+  border-radius: 5px;
+  height: 1.7em;
+  text-align: left;
+  padding-left: 5px;
+  position: absolute;
+  overflow: hidden;
+}
+
 .html-content {
   height: 40em;
   /*overflow: scroll;*/
