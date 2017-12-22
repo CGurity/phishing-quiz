@@ -85,9 +85,9 @@ if ($first_unanswered == 101){
 <p class="lead">Selecciona si lo que ves abajo es real o un ataque de suplantación de identidad.</p>
 <pre>
 <?php
-  //echo $unanswered.'<br>';
-  //echo $first_unanswered.'<br>';
-  // print_r($array_temp);
+  // echo $res_option.'<br>';
+  // echo $_SESSION['quiz'][$res_sequence]['response'].'<br>';
+  // print_r($_SESSION['quiz'][$res_sequence]);
   //print_r($_SESSION['quiz']);
 ?>
 </pre>

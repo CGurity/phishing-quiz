@@ -1,11 +1,6 @@
 <?php
 session_start();
-if($_GET['reset']){
-  unset($_SESSION['quiz']);
-}
-if (isset($_SESSION['quiz'])){
-  header('Location: '.'quiz.php');
-}
+unset($_SESSION['quiz']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,42 +28,35 @@ if (isset($_SESSION['quiz'])){
   <body>
     <div class="container text-center">
 
-      <h1>Listado de ejemplos de phishing</h1>
-      <p class="lead">Selecciona qué ejemplo quieres consultar</p>
-      <div class="card-columns">
+      <h1>Quiz de phishing</h1>
+      <p class="lead">Con esta herramienta puedes probar tus conocimientos sobre suplantación de identidad en correos electrónicos, redes sociales y mensajería instantánea</p>
+      <h3>¿Qué deseas hacer?</h3>
 
-      <?php
-      $directories = glob($somePath . 'examples/*' , GLOB_ONLYDIR);
-      // print_r($directories);
-
-      foreach ($directories as $dir){
-        $ini_array = parse_ini_file($dir."/config.ini");
-        if ($ini_array['title']){
-          $card_title = $ini_array['title'];
-        } else {
-          $card_title = str_replace("examples/","",$dir);
-        }
-        if ($ini_array['description']){
-          $card_description = $ini_array['description'];
-        } else {
-          $card_description = "";
-        }
-        $card_image = "";
-        if ($ini_array['image']){
-          $card_image = '<img class="card-img-top" src="'.$dir.'/image.png" alt="Card image cap">';
-        }
-        echo '<div class="card">
-
-    <div class="card-body">'.$card_image.'
-      <h4 class="card-title"><a href="/example.php?example='.str_replace("examples/","",$dir).'">'.$card_title.'</a></h4>
-      <p class="card-text">'.$card_description.'</p>
-    </div>
-  </div>';
-      }
-
-
-      ?>
-</div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card border-warning">
+            <div class="card-body">
+              <h4 class="card-title">Hacer el quiz de phishing</h4>
+              <p class="card-text">Pon a prueba tu conocimiento sobre phishing y después compara los resultados con tus respuestas</p>
+              <a href="quiz.php?reset=1" class="btn btn-warning">¡Hacer el quiz!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card border-info">
+            <div class="card-body">
+              <h4 class="card-title">Navegar todos los ejemplos</h4>
+              <p class="card-text">Revisa sólo aquellos ejemplos que te interesan y consulta cuáles son reales, cuáles phishing y por qué.</p>
+              <a href="list.php?reset=1" class="btn btn-info">Navegar ejemplos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p> También puedes consultar el código fuente en <a href="https://github.com/cguerrave/phishing-quiz" target="_blank">Github</a></p>
+        </div>
+      </div>
 
 
 
