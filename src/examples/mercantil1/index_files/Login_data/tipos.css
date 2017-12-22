@@ -1,0 +1,567 @@
+BODY {
+	font-family : Arial, Verdana, sans-serif;
+	font-size:11px;
+	padding-left:00px;
+	padding-right:00px;	
+	margin: 0px 0px 0px 0px;
+}
+/* Div de contenido*/
+.contenido {
+	width:100%;
+	padding: 15px 20px 10px 20px;
+}
+	
+/* navegación*/
+.logo{
+	background:url(../images/logo_Bancolombia.gif) no-repeat left;
+	width:137px;
+	height:41px;
+	padding-bottom:18px;
+	padding-top:18px;
+}
+/*Imagen header propaganda*/
+.img{
+	background:url(../images/54px.gif) no-repeat left;
+	width:54px;
+	height:54px;
+}
+/*linea header*/
+.lin_header{
+	background-color:#000080;
+	font-size:0px;
+	height:1px;
+}
+.title_header_sup{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:left;
+	color:#7C97BC;
+	padding-right:5px;
+	vertical-align:bottom;
+}
+a.link_header{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#003366;
+	padding-left:8px;
+	padding-right:8px;
+	padding-bottom:2px;
+	padding-top:2px;
+	text-decoration:none;
+}
+a.link_header_salir{
+	background-color:#000080;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#ffffff;
+	padding-left:8px;
+	padding-right:8px;
+	text-decoration:none;
+}
+/*Flujo de tareas*/
+.navegacion_activo{
+	background-color:#000080;
+	font-size:2px;
+	height:3px;
+}
+.navegacion_inactivo{
+	background-color:#000080;
+	font-size:2px;
+	height:3px;
+	padding-right:11px;
+}
+
+.navegacion_text_activo{
+    font-family:Verdana, Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    text-align:center;
+    color:#14559c;
+    padding-top:3px;
+    border-top:solid #14559c 3px;
+}
+.navegacion_text_inactivo{
+	font-family:Verdana, Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    text-align:center;
+    text-decoration:none;
+    color:#c0c0c0;
+    padding-top:3px;
+    border-top:solid #14559c 3px;
+}
+a.navegacion_text_link{
+	text-decoration:none;
+	color:#c0c0c0;
+	}
+.navegacion_pendiente{
+	background-color:#c0c0c0;
+	font-size:2px;
+	height:3px;
+}
+.navegacion_text_pendiente{
+	font-family:Verdana, Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    text-align:center;
+    text-decoration:none;
+    color:#c0c0c0;
+    padding-top:3px;
+    border-top:solid #c0c0c0 3px;
+}
+/*fin navegacion*/
+
+/* funcionalidad header contenido*/
+
+.header_title{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:11px;
+	vertical-align:bottom;
+	color:#000080;
+}
+/* indentificador user*/
+.header_ident_user_title{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	padding-left:2px;
+	padding-top:3px;
+	padding-bottom:3px;
+	color:#000000;
+}
+/* indentificador Nombre user*/
+.header_ident_user{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding-top:3px;
+	padding-bottom:3px;
+	color:#000000;
+}
+/* fecha*/
+.header_fecha{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:right;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-right:5px;
+	color:#000000;
+}
+/* Descripción de la operación */
+.header_descrip_operacion{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-right:5px;
+	color:#000000;
+}
+/*--footer--*/
+.footer_td{
+color:#003366;
+font-size:11px;
+padding-right:8px;
+}
+a.footer{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:bold;
+color:#003366;
+padding-left:8px;
+padding-right:8px;
+}
+.powered_by{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#003366;
+text-align:right;
+}
+
+
+/*-- text aprobación / err--*/
+.text_ok{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+	font-weight:none
+	}
+/*--text error aplicación--*/
+.text_err_aplicacion{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FF0000;
+	padding-left:2px;
+	}
+.borde_err_app{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000080;
+	background-color: #ffffff;
+	padding:10px;
+	font-weight:bold;
+	text-align:left;
+	
+}
+/* icono de err - aprov */
+td.ico{
+text-align:center;
+vertical-align:top;
+	}
+/*---texto error recuperable-*/
+.text_err{
+	font-family:Verdana, Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FF0000;
+	padding-left:2px;
+}
+.err_validation{
+	font-family:Verdana, Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#CC0000;
+	font-weight:bold;
+	padding-left:2px;
+}
+
+.err_validation_simple{
+	font-family:Verdana, Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#CC0000;
+	font-weight:normal;
+}
+/*tablas y contenido*/
+.tablas{
+	border-color:#000033 #000033 #000033 #000033;
+	border-style: solid; 
+	border-top-width: 1px; 
+	border-right-width: 1px; 
+	border-bottom-width: 1px; 
+	border-left-width: 0px;
+	background-color: #ffffff;
+}
+.totales{
+	border-color:#000033 #000033 #000033 #000033;
+	border-style: solid; 
+	border-top-width: 1px; 
+	border-right-width: 0px; 
+	border-bottom-width: 0px; 
+	border-left-width: 1px;
+	background-color:#ececec;
+}
+th.titulo_cell, th.titulo_cell a{
+	background-color:#00007d;
+	padding-top:3px;
+	padding-bottom:3px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-align:center;
+}
+.cell_uppercase{
+	background-color:#FFFFFF;
+	border-left-color:#000033;
+	border-left-style:solid;
+	border-left-width:1px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000000;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:2px;
+	text-align:left;
+	text-transform:uppercase;
+}
+.cell_centro{
+	background-color:#FFFFFF;
+	border-left-color:#000033;
+	border-left-style:solid;
+	border-left-width:1px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000000;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align:center;
+}
+.cell_izquierda{
+	background-color:#FFFFFF;
+	border-left-color:#000033;
+	border-left-style:solid;
+	border-left-width:1px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000000;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:2px;
+	text-align:left;
+}
+.cell_derecha{
+	background-color:#FFFFFF;
+	border-left-color:#000033;
+	border-left-style:solid;
+	border-left-width:1px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000000;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-right:5px;
+	text-align:right;
+}
+.cell_centro_err{
+	background-color:#FFFFFF;
+	border-left-color:#000033;
+	border-left-style:solid;
+	border-left-width:1px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#FF0000;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align:center;
+}
+.cell_izquierda_err{
+	background-color:#FFFFFF;
+	border-left-color:#000033;
+	border-left-style:solid;
+	border-left-width:1px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#FF0000;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:2px;
+	text-align:left;
+}
+.cell_derecha_err{
+	background-color:#FFFFFF;
+	border-left-color:#000033;
+	border-left-style:solid;
+	border-left-width:1px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#FF0000;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-right:5px;
+	text-align:right;
+}
+
+/*link  color azul*/
+.link{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#a0f078;
+	font-size:11pt;
+}
+	
+/* botones*/
+.fboton, .botonbusca {
+	border:1px;
+	border-bottom-color:#000000;
+	background: #7c97bc;
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 11px;
+	font-weight: none;
+	height: 16px;
+	color: #BBBBBB;
+	padding-bottom:3px;
+}
+.fboton {
+	background:url(../images/fon_button.gif) repeat-x left;
+	color: #ffffff;
+	font-weight: none;
+}
+.botonbusca {
+	border: 0px none;
+}
+/*comboBox*/
+.combo{
+	border:#FF0000;
+	background-color:#FF0000;
+	border-style:solid;
+}
+/*--  burbuja de ayuda --*/
+.globe_header{
+	font:bold 13px Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+.globe_cont{
+	font:normal 11px Arial, Helvetica, sans-serif;
+	color:#000;
+}
+/*--Para las etiquetas de los valores de un form--*/
+td.label{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	text-align:right;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-right:18px;
+	
+		
+}
+
+/*-- Para los datos a la derecha de un formulario --*/
+input.error, td.field input.error, select.error, td.field textarea.error{
+	border: 1px solid #CC0000;
+}
+
+/*-- Pintar labels de los campos --*/
+
+
+.lblred {
+	color: #CC0000;
+}
+
+/*--Deshabilitar campo--*/
+input.ronly{
+	color: #B1B1B1;
+}
+
+
+/* Para presentar lo llenado en formulario */
+.text_form_right{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11pt;
+	text-align:left;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:9px;
+	color:#000000;
+	
+}
+.text_form_left{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11pt;
+	font-weight:bold;
+	text-align:right;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-right:0px;
+	color:#000000;
+}
+
+td.toperror{	
+  margin:5px;
+  padding:0 3px 0 9px;
+  color:red;
+  font: bold 11px tahoma, arial, helvetica, sans-serif ;
+}
+label.lerror {
+	color: red;
+}
+
+/*Icono de ayudas*/
+.ico_err {
+margin-left:10px;
+margin-right:10px;
+border:0;
+}
+
+/*Para seleccionador de grupos que tiene dos select*/
+select.comboselect {
+	display: block;
+	width: 310px;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+/* tablas con ordenamiento */
+/*table.tablesorter {	
+    
+	border-color:#000033 #000033 #000033 #000033;
+	border-style: solid;
+	border-top-width: 1px; 
+	border-right-width: 1px; 
+	border-bottom-width: 1px; 
+	border-left-width: 0px;
+	background-color: #ffffff;
+}*/
+table.tablesorter thead tr th, table.tablesorter tfoot tr th{	
+	/*background-color:#00007d;*/
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-align:center;	
+}
+table.tablesorter thead tr th a {
+	color:#FFF;
+}
+table.tablesorter thead tr .header {
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#EEEEEE;
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+/*background-color: #00007d;*/
+}
+
+/*tablas sin ordenamiento con lineas zebra */
+table.zebra {
+	
+	border-color:#000033 #000033 #000033 #000033;
+	border-style: solid;
+	border-top-width: 1px; 
+	border-right-width: 1px; 
+	border-bottom-width: 1px; 
+	border-left-width: 0px;
+	background-color: #ffffff;
+}
+table.zebra thead tr th, table.zebra tfoot tr th {
+	text-align:center;
+	background-color:#00007d;
+	padding-top:3px;
+	padding-bottom:3px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-align:center;
+}
+table.zebra tr.even td { background-color:#FFF; }
+table.zebra tr.odd td { 
+  background-color:#EEEEEE; 
+}
+
+.tableLabel {
+	text-align: right;
+	padding-right: 5px;
+}
+
+.tableLabelBold {
+	text-align: right;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+.blueLink {
+	color:1E397C; 
+	text-decoration: none; 
+}
+
+/*globos alertas rojo*/
+.m-tlr {
+	width:6px;
+	height:5px;
+	background:url(../images/m-tlr.gif) no-repeat left top;
+}
+.m-trr {
+	width:6px;
+	height:5px;
+	background:url(../images/m-trr.gif) no-repeat right top;
+}
+

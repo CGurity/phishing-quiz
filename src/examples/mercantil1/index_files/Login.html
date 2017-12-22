@@ -1,0 +1,495 @@
+<html><head>
+	<title>Mercantil en L�nea</title>
+	<link rel="stylesheet" href="copyright_data/global.css" type="text/css">
+	<link href="../../res/css/grid.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="Login_data/thickbox.css" type="text/css">
+
+
+
+
+	<link href="Login_data/tipos.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Keywords" content="">
+
+
+</head><body onload="validateBrowser(); clearPass();" topmargin="0" marginwidth="0" marginheight="0" leftmargin="0"><div id="help_popup2Izq"></div><div id="help_popup2"></div><div id="help_popup"></div><div id="help_popupIzq"></div>
+
+
+
+
+<div id="error_popupTopLeft" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display:none;  ">
+    <div style="padding: 2px;" id="error_popup_inner">
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+                <th class="m-tlr" width="6" height="5"><img src="Login_data/m-tlr.gif"></th>
+                <th bgcolor="#CC0000" width="500px"></th>
+                <th class="m-trr" width="6" valign="top" height="5"><img src="Login_data/m-trr.gif"></th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(204, 0, 0); padding-left: 3px; padding-right: 3px;" bgcolor="#CC0000"><div id="error_popupTopLeftTitle" class="globe_header" align="center"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(204, 0, 0); border-right: 1px solid rgb(204, 0, 0); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="error_popupTopLeftText" class="globe_cont"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomrightIZ.gif" width="10" height="31"></th>
+                                <th scope="col" style="background-image:url(/images/help_box_bottom.gif)" width="100%"></th>
+                                <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomleftIZ.gif" width="35" height="31"></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="error_popupBottomLeft" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display:none">
+    <div style="padding: 2px;" id="error_popup_inner2">
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+                <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0" height="6">
+                            <tbody><tr>
+                                <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomrightIZ_up.gif"></th>
+                                <th scope="col" style="background-image:url(/images/help_box_bottom_up.gif)" width="100%">&nbsp;</th>
+                                <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomleftIZ_up.gif" width="35" height="31"></th>
+                            </tr>
+                        </tbody></table>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(204, 0, 0); padding-left: 3px; padding-right: 3px;" bgcolor="#CC0000"><div id="error_popupBottomLeftTitle" class="globe_header" align="center"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(204, 0, 0); border-right: 1px solid rgb(204, 0, 0); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="error_popupBottomLeftText" class="globe_cont"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0" height="6">
+                            <tbody><tr>
+                                <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomrightIZ_down.gif" width="10" height="6"></th>
+                                <th scope="col" style="background-image:url(/images/help_box_bottom.gif)" width="100%"></th>
+                                <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomright_down.gif" width="10" height="6"></th>
+                            </tr>
+                        </tbody></table>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="error_popupTopRight" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display:none">
+    <div style="padding: 2px;" id="error_popup_inner">
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+                <th class="m-tlr" bgcolor="#CC0000" width="6" height="5"><img src="Login_data/m-tlr.gif"></th>
+                <th bgcolor="#CC0000" width="500px"></th>
+                <th class="m-trr" width="6" valign="top" height="5"><img src="Login_data/m-trr.gif"></th>
+            </tr>
+            <tr>
+                <th colspan="3" style="border-left: 1px solid rgb(204, 0, 0); padding-left: 3px; padding-right: 3px;" bgcolor="#CC0000"><div id="error_popupTopRightTitle" class="globe_header" align="center"></div></th>
+            </tr>
+            <tr>
+                <th colspan="3" style="border-left: 1px solid rgb(204, 0, 0); border-right: 1px solid rgb(204, 0, 0); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="error_popupTopRightText" class="globe_cont"></div></th>
+            </tr>
+            <tr>
+                <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                        <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomleft.gif" width="35" height="31"></th>
+                        <th scope="col" style="background-image:url(/images/help_box_bottom.gif)" width="100%"></th>
+                        <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomright.gif" width="10" height="31"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </th>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div id="error_popupBottomRight" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display:none">
+    <div style="padding: 2px;" id="error_popup_inner2">
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+                <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0" height="6">
+                    <tbody><tr>
+                        <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomleft_up.gif"></th>
+                        <th scope="col" style="background-image:url(/images/help_box_bottom_up.gif)" width="100%">&nbsp;</th>
+                        <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomright_up.gif" width="10" height="31"></th>
+                    </tr></tbody></table>
+                </th></tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(204, 0, 0); padding-left: 3px; padding-right: 3px;" bgcolor="#CC0000"><div id="error_popupBottomRightTitle" class="globe_header" align="center"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(204, 0, 0); border-right: 1px solid rgb(204, 0, 0); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="error_popupBottomRightText" class="globe_cont"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0" height="6">
+                        <tbody><tr>
+                            <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomrightIZ_down.gif" width="10" height="6"></th>
+                            <th scope="col" style="background-image:url(/images/help_box_bottom.gif)" width="100%"></th>
+                            <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomright_down.gif" width="10" height="6"></th>
+                         </tr>
+                        </tbody></table></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!-- BURBUJAS ANARANJADAS -->
+<div id="help_popupTopLeft" style="position: absolute;width: 175px;text-align: left;z-index: 1001;display:none">
+<div style="padding:2px;filter:shadow(color:gray,strength:7, direction:135);" id="help_popup_inner">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody><tr>
+  <th class="m-tl" width="6px" height="5"><img src="Login_data/m-tl.gif"></th>
+  <th bgcolor="#ff6600" width="500px"></th>
+  <th class="m-tr" width="6" valign="top" height="5"><img src="Login_data/m-tr.gif"></th>
+</tr>
+<tr>
+  <th colspan="3" style="border-left:1px solid #ff6600; padding-left:3px; padding-right:3px" bgcolor="#ff6600"><div id="help_popupTopLeftTitle" class="globe_header" align="center"></div></th>
+  </tr>
+<tr>
+  <th colspan="3" style="border-left:1px solid #ff6600; padding-left:3px; border-right:1px solid #ff6600; padding-right:3px; padding-bottom:3px; padding-top:3px" bgcolor="#FFFFFF"><div style="margin-top:3; margin-bottom:3;" id="help_popupTopLeftText" class="globe_cont"></div></th>
+  </tr>
+<tr>
+  <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomrightCIZ.gif" width="10" height="6"></th>
+      <th scope="col" style="background-image:url(/images/help_box_bottomC.gif)" width="100%"></th>
+      <th scope="col" width="35" valign="top" height="31" align="left"><img src="Login_data/help_box_bottomleftCIZ.gif" width="35" height="31"></th>
+    </tr>
+  </tbody></table></th>
+  </tr>
+</tbody></table>
+</div>
+</div>
+
+
+<div id="help_popupTopRight" style="position: absolute;width: 175px;text-align: left;z-index: 1001;display:none;">
+  <div style="padding:2px;filter:shadow(color:gray,strength:7, direction:135);" id="help_popup_inner2">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <th class="m-tl" width="6px" height="5"><img src="Login_data/m-tl.gif"></th>
+    <th bgcolor="#ff6600" width="500px"></th>
+    <th class="m-tr" width="6" valign="top" height="5"><img src="Login_data/m-tr.gif"></th>
+  </tr>
+  <tr>
+    <th colspan="3" style="border-left:1px solid #ff6600; padding-left:3px; padding-right:3px" bgcolor="#ff6600"><div id="help_popupTopRightTitle" class="globe_header" align="center"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3" style="border-left:1px solid #ff6600; padding-left:3px; border-right:1px solid #ff6600; padding-right:3px; padding-bottom:3px; padding-top:3px" bgcolor="#FFFFFF"><div style="margin-top:3; margin-bottom:3;" id="help_popupTopRightText" class="globe_cont"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <th scope="col" width="35" valign="top" height="31" align="left"><img src="Login_data/help_box_bottomleftC.gif" width="35" height="31"></th>
+        <th scope="col" style="background-image:url(/images/help_box_bottomC.gif)" width="100%"></th>
+        <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomrightC.gif" width="10" height="6"></th>
+      </tr>
+    </tbody></table></th>
+    </tr>
+</tbody></table>
+</div>
+</div>
+
+<div id="help_popupBottomRight" style="position: absolute;width: 175px;text-align: left;z-index: 1001;display:none">
+  <div style="padding:2px;filter:shadow(color:gray,strength:7, direction:135);" id="help_popup_inner">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomleftCIZ_up.gif" width="35" height="31"></th>
+        <th scope="col" style="background-image:url(/images/help_box_bottomC_up.gif)" width="100%">&nbsp;</th>
+        <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomrightC_up.gif" width="10" height="31"></th>
+      </tr>
+    </tbody></table></th>
+  </tr>
+  <tr>
+    <th colspan="3" style="border-left:1px solid #ff6600; padding-left:3px; padding-right:3px" bgcolor="#ff6600"><div id="help_popupBottomRightTitle" class="globe_header" align="center"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3" style="border-left:1px solid #ff6600; padding-left:3px; border-right:1px solid #ff6600; padding-right:3px; padding-bottom:3px; padding-top:3px" bgcolor="#FFFFFF"><div style="margin-top:3; margin-bottom:3;" id="help_popupBottomRightText" class="globe_cont"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomrightCIZ.gif" width="10" height="6"></th>
+        <th scope="col" style="background-image:url(/images/help_box_bottomC.gif)" width="100%"></th>
+        <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomrightC.gif" width="10" height="6"></th>
+      </tr>
+    </tbody></table></th>
+    </tr>
+</tbody></table>
+</div>
+</div>
+
+
+<div id="help_popupBottomLeft" style="position: absolute;width: 175px;text-align: left;z-index: 1001;display:none">
+  <div style="padding:2px;filter:shadow(color:gray,strength:7, direction:135);" id="help_popup_inner">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomrightCIZ_up.gif" width="10" height="31"></th>
+        <th scope="col" style="background-image:url(/images/help_box_bottomC_up.gif)" width="100%">&nbsp;</th>
+        <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomleftC_up.gif" width="35" height="31"></th>
+      </tr>
+    </tbody></table></th>
+  </tr>
+  <tr>
+    <th colspan="3" style="border-left:1px solid #ff6600; padding-left:3px; padding-right:3px" bgcolor="#ff6600"><div id="help_popupBottomLeftTitle" class="globe_header" align="center"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3" style="border-left:1px solid #ff6600; padding-left:3px; border-right:1px solid #ff6600; padding-right:3px; padding-bottom:3px; padding-top:3px" bgcolor="#FFFFFF"><div style="margin-top:3; margin-bottom:3;" id="help_popupBottomLeftText" class="globe_cont"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <th scope="col" valign="top" align="right"><img src="Login_data/help_box_bottomrightCIZ.gif" width="10" height="6"></th>
+        <th scope="col" style="background-image:url(/images/help_box_bottomC.gif)" width="100%"></th>
+        <th scope="col" valign="top" align="left"><img src="Login_data/help_box_bottomrightC.gif" width="10" height="6"></th>
+      </tr>
+    </tbody></table></th>
+    </tr>
+</tbody></table>
+</div>
+</div>
+
+<!--FIN BURBUJAS ANARANJADAS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<table border="0" width="90%" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+	    	<td colspan="2" height="10"><img src="Login_data/pxlClear.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr>
+			<td>
+				<table border="0" background="Login_data/fondo_title.gif" cellspacing="0" cellpadding="0">
+			     	<tbody><tr height="20">
+		                <td width="4" valign="top" align="left"><img src="Login_data/bTitleLeft.gif" border="0"></td>
+		                <td valign="middle" nowrap="nowrap" align="left">
+		                &nbsp;<img src="Login_data/MercantilEnLinea.gif" border="0">&nbsp;
+		                </td>
+			        </tr>
+				</tbody></table>
+			</td>
+		</tr>
+    </tbody></table>
+
+
+<table border="0" width="90%" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		<td width="90%" valign="top">
+		<div class="contenido" style="padding:15px 0px 10px;">
+		<form name="authenticationForm" id="authenticationForm" method="POST" action="/olb/AuthLogin" _lpchecked="1">
+      		<table border="0" width="60%" cellspacing="0">
+      				<tbody><tr>
+						<td>
+							<div id="divValidateBrowser" name="divValidateBrowser" style="display: none">
+							<table border="0">
+								<tbody><tr>
+									<td class="ico" width="2%"><img src="Login_data/warning.gif" width="16" height="15"></td>
+									<td width="98%" valign="top">
+									<b>Estimado cliente, detectamos que se est� conectando a
+Mercantil en L�nea Personas a trav�s de un Navegador con el cual estamos
+ en el proceso de certificaci�n, por lo que no se garantiza el �ptimo
+funcionamiento de los servicios, le recomendamos intentarlo a trav�s de
+otro navegador.</b><br><br>
+									</td>
+								</tr>
+							</tbody></table>
+							</div>
+						</td>
+					</tr>
+        			<tr>
+          				<td>
+						<br>
+            			Por favor introduzca Usuario o Llave Mercantil y <br>Clave de Internet.
+						<br><br>
+						<!--ShowRecoverableError-->
+                             <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                                 <tbody id="summary">
+                                 <tr>
+                                                                      </tr>
+                                 </tbody>
+                             </table>
+<!--ShowRecoverableError-->
+
+
+						<br><br>
+          				</td>
+        			</tr>
+			</tbody></table>
+			<table style="margin-left:20px;">
+        			<tbody><tr align="right">
+          				<td>
+							<!--ShowHelp-->
+<a href="#" onmouseover="getMouseXY( event ); showHelp( 'help_popup','Usuario o Llave Mercantil','Usuario o N�mero de tarjeta de D�bito Mercantil', 175 );" onmouseout="hideHelp('help_popup'); " onclick="return false;"><img src="Login_data/informacion.gif" class="ico_err" align="absmiddle"></a><!--End ShowHelp-->
+
+						</td>
+						<td>
+							Usuario/Llave Mercantil:
+						</td>
+						<td id="llaveMercantil">
+            				<input id="userId" name="userId" size="27" maxlength="18" autocomplete="off" tabindex="1" onblur="mask()" onclick="clearUserID();" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" type="text">
+          				</td>
+        			</tr>
+        			<tr align="right">
+          				<td>
+							<!--ShowHelp-->
+<a href="#" onmouseover="getMouseXY( event ); showHelp( 'help_popup','Clave de Internet','Clave secreta para ingresar en Mercantil en L�nea Personas, desde computador o celular. Si no ha ingresado nunca a Mercantil en L�nea, presione el link \&quot;�Quiere ingresar por primera vez?\&quot; para registrarse y crear su clave de internet.', 175 );" onmouseout="hideHelp('help_popup'); " onclick="return false;"><img src="Login_data/informacion.gif" class="ico_err" align="absmiddle"></a><!--End ShowHelp-->
+
+						</td>
+						<td>
+							Clave de Internet:
+						</td>
+						<td id="claveInternet">
+            				<input id="password" name="password" size="27" maxlength="15" value="" autocomplete="off" tabindex="2" onclick="clearPass()" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" type="password">
+          				</td>
+        			</tr>
+			</tbody></table>
+			<table>
+			        <tbody><tr>
+						<td>
+							<table border="0" width="75%" class="phishy-highlight">
+								<tbody><tr>
+									<td width="15%"></td>
+									<td>
+										<br><br>
+										<p style="overflow: hidden;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+										<input id="accept_btn" tabindex="3" src="Login_data/accept.gif" type="image">&nbsp;&nbsp;
+										<br><br><br><br><img src="Login_data/pxlClear.gif" border="0" width="270" height="1">
+										</p>
+									</td>
+								</tr>
+							</tbody></table>
+						</td>
+			        </tr>
+			        <tr>
+						<td>
+							<table border="0" width="75%">
+								<tbody><tr align="center">
+									<td width="33%">
+
+											<a href="https://www30.mercantilbanco.com/olb/Init3?fwd=NEW_USER" tabindex="5">�Quiere ingresar por primera vez?</a>
+
+									</td>
+									<td valign="top">
+										<a href="https://www30.mercantilbanco.com/olb/Init3?fwd=FORGET_USER" tabindex="6">�Olvid� su Usuario?</a>
+									</td>
+									<td width="34%">
+
+
+											<a href="https://www30.mercantilbanco.com/olb/Init3?fwd=FORGET_KEY" tabindex="6">�Olvid� su Clave de Internet?</a>
+
+
+									</td>
+								</tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr valign="top" align="center">
+									<td width="33%">
+
+											<a href="https://www30.mercantilbanco.com/olb/Init3?fwd=KEY_LOCKED" tabindex="8">Desbloqueo de Clave de Internet</a>
+
+									</td>
+									<td width="34%">
+										<a href="http://www.mercantilbanco.com/mercprod/site/tools/contactenos/contacto.html" tabindex="9" target="bank">�Quiere contactarnos?</a>
+									</td>
+									<td width="33%">
+										<a href="http://www.mercantilbanco.com/mercprod/site/personas/puntos_atencion/mercantil_en_linea.html" tabindex="10" target="bank">Informaci�n General</a>
+									</td>
+								</tr>
+							</tbody></table>
+						</td>
+					</tr>
+					<input name="appName" value="" type="hidden">
+					<input name="appVersion" value="" type="hidden">
+					<input name="platform" value="" type="hidden">
+					<input name="userAgent" value="" type="hidden">
+					<input name="height" value="" type="hidden">
+					<input name="width" value="" type="hidden">
+					<input name="colorDepth" value="" type="hidden">
+					<input name="availWidth" value="" type="hidden">
+					<input name="availHeight" value="" type="hidden">
+			 </tbody></table>
+			 </form>
+
+
+			 </div>
+		</td>
+		<td valign="top" align="center">
+			<iframe scrolling="no" src="Login_data/login_BOLP_BM_zonaA.html" width="360" height="310" frameborder="0"></iframe>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left">
+			<br>
+ 			<iframe scrolling="no" src="Login_data/login_BOLP_BM_zonaB.html" width="450" height="310" frameborder="0"></iframe>
+		</td>
+		<td valign="top" align="center">
+ 			<iframe scrolling="no" src="Login_data/login_BOLP_BM_zonaC.html" width="360" height="310" frameborder="0"></iframe>
+		</td>
+	</tr>
+  <tr>
+</tr></tbody></table>
+
+<br><br>
+<table border="0" width="100%" cellspacing="0" cellpadding="2">
+  <tbody><tr height="23">
+    <td valign="bottom" align="center">
+      <a href="#" onclick="javascript:window.open('http://www.mercantilbanco.com/mercprod/site/personas/seguridad/fraudes.html','YOUR_SECURITY','width=889,height=556,scrollbars=yes,resizable=yes')">Seguridad</a>&nbsp;&nbsp;
+      <a href="http://www.mercantilbanco.com/mercprod/site/external/politica_privacidad.html" target="_blank">Pol�tica de Privacidad</a>&nbsp;&nbsp;
+      <a href="#" onclick="window.open('http://www.mercantilbanco.com/mercprod/site/pdfs/contrato_unico.pdf','terminos','height=700,width=860,scrollbars=yes, resizable=yes, menubar=no, left=0, top=0, location=no')">T�rminos y Condiciones</a>&nbsp;&nbsp;
+      <!--  <a href="javascript:popup_help7(65,659,701)">Requerimientos del Sistema</a> -->
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+</body></html>

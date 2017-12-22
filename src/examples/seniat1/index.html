@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en"><head><link rel="stylesheet" href="index_files/bootstrap.html">
+
+<script type="text/javascript" src="index_files/bootstrap_002.html"></script>
+
+
+<script type="text/javascript" src="index_files/jquery-1.js"></script>
+<script type="text/javascript" src="index_files/jquery-ui.js"></script>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" charset="utf-8">
+    <title>SENIAT - Servicio Integrado de Administraci�n Aduanera y Tributaria</title>
+    <link type="text/css" href="index_files/iseniatlogin.css" rel="stylesheet">
+    <link rel="stylesheet" href="index_files/iseniat.css">
+
+    <script type="text/javascript" src="index_files/iseniatlogin.js"></script>
+  </head>
+  <body oncontextmenu="return false;">
+    <div id="divBloqueoTransparente" style="position:absolute;top: -220px; left: 0px; width:100px; height:100px;"></div>
+      <div id="divBloqueo" style="position:absolute;top: -220px; left: 0px; width:100px; height:100px;">
+        <div>
+            <table>
+            <tbody><tr align="center">
+              <td align="center"><img src="index_files/iseniat1.jpg" border="0"></td>
+            </tr>
+            <tr align="center">
+              <td class="mensajeError" align="center">
+                    <br><b>Verificando Usuario, Espere Por Favor...</b> <br>
+              </td>
+            </tr>
+            <tr align="center">
+              <td align="center">
+                    <img src="index_files/loading.gif" width="32" height="32" border="0">
+              </td>
+            </tr>
+            </tbody></table>
+        </div>
+     </div>
+    <div align="center">
+    <br>
+    <form name="DatosLoginForm" method="post" action="/iseniatlogin/login.do;jsessionid=8a586beb6a210dc7ad9a8522e1c0ceeb655744dd376e0a2666417d9cced29d05.e3mRbx0ScheTe34RbhuTe0" id="consultaForm">
+    <input name="tipoUsuario" value="1" type="hidden">
+
+<table cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr>
+    <td valign="middle" height="51" align="center">&nbsp;</td>
+    <td valign="middle" align="center"><img src="index_files/login_pn.gif"></td>
+   <td valign="middle" height="51" align="center">&nbsp;</td>
+</tr>
+ <tr>
+    <td width="53" valign="middle" align="left">              </td>
+    <td width="354" valign="top" align="center">
+                <table cellspacing="0" cellpadding="0" bordercolor="#FF0000" border="1">
+                <tbody><tr>
+                <td width="346">
+                <table width="100%" cellspacing="0" cellpadding="0" bordercolor="#FF0000" border="0">
+                <tbody><tr>
+                   <td colspan="9">&nbsp;</td>
+                </tr>
+                <tr class="bordeFila">
+                  <td colspan="9" width="100%">
+                      <center><div class="mensajeError" id="mensajeErrorSubmit"><br></div>
+                      <span id="mensajeError" class="mensajeError"><br></span></center>
+                  </td>
+                </tr>
+                <tr bordercolor="#CCCCCC">
+                  <td width="1%">&nbsp;</td>
+                  <td width="8%">&nbsp;</td>
+                  <td width="35%">&nbsp;</td>
+                  <td width="10%">&nbsp;</td>
+                  <td colspan="3">&nbsp;</td>
+                  <td width="12%">&nbsp;</td>
+                  <td width="1%">&nbsp;</td>
+                </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="5"><label>Usuario:</label></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="5"><input id="usuario" maxlength="50" size="16" name="usuario" autocomplete="off" onkeypress="pasaEnter(event);" class="form-control input-sm" placeholder="Ingrese usuario" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" value="v55555555" width="360" type="text"></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="3">&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="5"><label>Clave:</label></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="5" bordercolor="#FF0000"><input id="clave" maxlength="50" size="16" name="clave" autocomplete="off" onkeypress="pasaEnterK(event);" class="form-control input-sm" placeholder="Ingrese clave" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" width="360" type="password"></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="3">&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="7">Ingrese el c�digo mostrado en la imagen:</td>
+                </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><img src="index_files/kapatch.jpg" id="kaptchaImage" width="125" height="30"></td>
+                  <td>&nbsp;</td>
+                  <td colspan="3" bordercolor="#FF0000"><input id="kaptcha" maxlength="50" size="16" name="kaptcha" autocomplete="off" onkeypress="verificaEnter(event);" class="form-control input-sm" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" width="180" type="text"></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="3">&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <a href="javascript:validarIngreso();" onmouseover="status='@seniat'; return true;"><img src="index_files/logaceptar.gif" width="89" border="0"></a><a href="javascript:validarIngreso();" onmouseover="status='@seniat'; return true;"><img src="index_files/flechaingresar.gif" border="0"></a>
+                  </td>
+                  <td>&nbsp;</td>
+                  <td colspan="3">
+                    <a href="javascript:window.close();" onmouseover="status='@seniat'; return true;"><img src="index_files/logsalir.gif" width="89" border="0"></a><a href="javascript:window.close();" onmouseover="status='@seniat'; return true;"><img src="index_files/flechasalir.gif" border="0"></a>
+                  </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="3">&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  </tr>
+                  <tr class="bordeFila">
+                    <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="3">&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  </tr>
+                  <!--tr class="bordeFila">
+                    <td></td>
+                  <td></td>
+                  <td colspan="5" height="10"><img src="http://contribuyente.seniat.gob.ve/imagenes/linea.gif"></td>
+                  <td></td>
+                  <td></td>
+                  </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="5">
+                    <div align="right">
+                        <a href="javascript:olvidoClave('http://contribuyente.seniat.gob.ve/');" onMouseOver="status='@seniat'; return true;" class="textoMensaje"><span class="textoMensaje">Olvid&oacute; su clave&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+                        <a href="javascript:olvidoClave('http://contribuyente.seniat.gob.ve/');" style="text-decoration: none" onMouseOver="status='@seniat'; return true;"><img src="http://contribuyente.seniat.gob.ve/imagenes/flechair.gif" border="0"></a></div>
+                  </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  </tr-->
+                <tr class="bordeFila">
+                  <td></td>
+                  <td></td>
+                  <td colspan="5" height="10"><img src="index_files/linea.gif"></td>
+                  <td></td>
+                  <td></td>
+                  </tr>
+                <tr class="bordeFila">
+                  <td></td>
+                  <td></td>
+                  <td colspan="5">
+                    <div align="right">
+                        <a href="javascript:olvidoTodo('http://contribuyente.seniat.gob.ve/');" onmouseover="status='@seniat'; return true;" class="textoMensaje"><span class="textoMensaje">&nbsp; &nbsp;&nbsp;Olvid� toda su informaci�n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+                        <a href="javascript:olvidoTodo('http://contribuyente.seniat.gob.ve/');" onmouseover="status='@seniat'; return true;"><img src="index_files/flechair.gif" border="0"></a>
+                    </div>
+                </td>
+
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  </tr>
+                <tr class="bordeFila">
+                  <td></td>
+                  <td></td>
+                  <td colspan="5" height="10"><img src="index_files/linea.gif"></td>
+                  <td></td>
+                  <td></td>
+                  </tr>
+                <tr class="bordeFila">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td colspan="5">
+                     <div align="right">
+                        <a href="javascript:registroNat('http://contribuyente.seniat.gob.ve/');" onmouseover="status='@seniat'; return true;" class="textoMensaje"><span class="textoMensaje">&nbsp;&nbsp;&nbsp;Reg�strese&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+                        <a href="javascript:registroNat('http://contribuyente.seniat.gob.ve/');" onmouseover="status='@seniat'; return true;"><img src="index_files/flechair.gif" border="0"></a>
+                    </div>
+                  </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  </tr>
+                        <tr class="bordeFila">
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td colspan="5"><img src="index_files/linea.gif"></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          </tr>
+                        <tr class="bordeFila">
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td colspan="3">&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          </tr>
+                        <tr class="bordeFila">
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td colspan="5" align="center"><img src="index_files/08000.gif"></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          </tr>
+                        <tr class="bordeFila">
+                          <td></td>
+                          <td></td>
+                          <td colspan="5" height="4"></td>
+                          <td></td>
+                          <td></td>
+                          </tr>
+                          </tbody></table>
+                        </td>
+                       </tr>
+                    </tbody></table>
+                </td>
+                <td width="63" valign="top" align="center"></td>
+          </tr>
+        </tbody></table>
+</form>
+<script type="text/javascript">
+        $(function(){
+            $('#kaptchaImage').on({
+                'click': function(){
+                        var d = new Date();
+                        $('#kaptchaImage').attr('src','kapatcha/'+d.getTime()+'.jpg');
+                }
+            });
+        });
+    </script>
+</div>
+
+</body></html>

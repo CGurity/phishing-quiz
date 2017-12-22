@@ -1,0 +1,107 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="copyright_data/global.css" type="text/css">
+
+
+<link rel="stylesheet" href="hidden_data_003/jquery.css" type="text/css">
+<script type="text/javascript">
+
+// BackSpace OFF		
+	backSpaceOff();
+	
+	function backSpaceOff(){
+		if (document) {		
+			if (document.onkeydown == null){
+				document.onkeydown = backSpaceOffValidate;
+				if (navigator.appName != "Microsoft Internet Explorer"){
+					document.onkeypress = backSpaceOffValidate;
+				}
+			}else{
+				var a = document.onkeypress;
+			}		
+		}
+	}
+
+	function backSpaceOffValidate(event) {
+		event = event || window.event;
+		var tgt = event.target || event.srcElement;
+		var strid = tgt.type;
+
+		if(event.keyCode == 116 ||event.keyCode == 117 ){
+			if (navigator.appName == "Microsoft Internet Explorer"){
+				window.event.keyCode=0;
+			}
+			return false;
+		}
+
+		if (event.keyCode == 8 && tgt.type != "text" && tgt.type != "password"){		
+			return false;
+		}else{
+			if (event.keyCode == 17){
+				alert("Función no permitida");
+				return false;
+			}
+			if (event.keyCode == 37 || event.keyCode == 39){
+				document.onkeypress = null;
+				alert("Función no permitida");
+				return false;
+			}
+			return true;
+		}
+
+	}
+
+// Mouse Right Button OFF
+	document.oncontextmenu=new Function("return false");
+				
+</script>
+
+
+<style type="text/css">
+#TB_overlayTotal {
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.TB_overlayBG {
+    background-color: #000;
+    filter: alpha(opacity=75);
+    -moz-opacity: 0.75;
+    opacity: 0.75;
+}
+</style>
+<script>
+var message="";
+
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false");
+
+function setVisibleModal(){
+	document.getElementById("TB_overlayTotal").style.display = "block";
+}
+function setNoVisibleModal(){
+	document.getElementById("TB_overlayTotal").style.display = "none";
+}
+</script>
+</head>
+<body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0">
+<div id="TB_overlayTotal" class="TB_overlayBG"></div>
+    <table border="0" width="96%" cellspacing="0" cellpadding="0" align="center">
+      <tbody><tr>
+		
+        <td class="pageSubTitleBlack" align="center">La información mostrada en esta página es confidencial.</td>
+		<td>&nbsp;</td>
+      </tr>
+    </tbody></table>
+</body></html>
