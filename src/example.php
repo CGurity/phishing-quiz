@@ -71,6 +71,9 @@
             <div class="col-xs-8 col-md-11 col-lg-10 col-11">
               <div class="url">
                 <img class="globos tt" data-placement="top" src="/img/ssl-indicator-<?php echo $dirconfig['ssl']; ?>.png" style="max-height:1.7em;" data-toggle="popover" data-content="<?php echo $dirconfig['ssl_popover']; ?>">
+                <?php if ($dirconfig['ssl'] == 'green'){ ?><span class="https_green">https://</span><?php } ?>
+<?php if ($dirconfig['ssl'] == 'red'){ ?><span class="https_red">https</span><span class="https_grey">://</span><?php } ?>
+<?php if ($dirconfig['ssl'] == 'grey'){ ?><span class="https_grey">https://</span><?php } ?>
                 <span id="url-bar" class="tt" data-toggle="popover" data-content="<?php echo $dirconfig['url_popover']; ?>" ><?php echo $dirconfig['url']; ?></span>
               </div>
             </div>
@@ -105,13 +108,17 @@
               <div class="col-xs-8 col-md-11 col-lg-10 col-11"><div class="url_mobile"><img class="globos tt" src="/img/ssl-indicator-mobile-<?php echo $dirconfig['ssl']; ?>.png" style="max-height:1.7em;" data-placement="left" data-toggle="popover" data-content="<?php echo $dirconfig['ssl_popover']; ?>">
                 <?php if ($dirconfig['ssl'] == 'green'){ ?><span class="https_green">https://</span><?php } ?>
 <?php if ($dirconfig['ssl'] == 'red'){ ?><span class="https_red">https</span><span class="https_grey">://</span><?php } ?>
-<?php if ($dirconfig['ssl'] == 'grey'){ ?><span class="https_grey">https://</span><?php } ?><span class="tt"  data-toggle="popover" data-placement="right" data-content="<?php echo $dirconfig['url_popover']; ?>"><?php echo $dirconfig['url']; ?></span></div></div>
+<?php if ($dirconfig['ssl'] == 'grey'){ ?><span class="https_grey">https://</span><?php } ?><span class="url-bar tt"  data-toggle="popover" data-placement="right" data-content="<?php echo $dirconfig['url_popover']; ?>"><?php echo $dirconfig['url']; ?></span></div></div>
               <div class="col-1"><div class="hamburguer-wrapper"><img src="/img/hamburguer.png" class="hamburguer"></div></div>
             </div>
             <div class="row">
-              <div class="col-12 html-content tt"  data-toggle="popover" data-content="<?php echo $dirconfig['frame_popover']; ?>">
+              <div class="col-12 html-content tt" data-toggle="popover" data-content="<?php echo $dirconfig['frame_popover']; ?>">
         <?php
-        }
+      } else {
+        ?>
+        <div class="html-content-mobile tt" data-toggle="popover" data-content="<?php echo $dirconfig['frame_popover']; ?>">
+          <?php
+      }
         ?>
               <!-- <iframe src="/home/cg/websites/paginasiete_index/index-2.html" style="width:100%;height:100%;border:none;"></iframe> -->
               <iframe src="<?php echo $frame; ?>" name="iframe1" style="width:100%;height:100%;border:none;"></iframe>
@@ -124,7 +131,11 @@
       </div>
 
       <?php
-      }
+    } else {
+      ?>
+    </div>
+      <?php
+    }
       ?>
     </div>
 </div>
