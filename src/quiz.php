@@ -169,8 +169,7 @@ if ($first_unanswered == 101){
           <div id="browser-wrapper">
           <div id="browser">
                 <div class="row browser-mockup-row">
-                  <div class="col-xs-8 col-md-11 col-lg-10 col-11"><div class="url_mobile"><img class="globos tt" src="/img/ssl-indicator-mobile-<?php echo $dirconfig['ssl']; ?>.png" style="max-height:1.7em;" data-placement="left">
-                    <?php if ($dirconfig['ssl'] == 'green'){ ?><span class="https_green">https://</span><?php } ?><?php if ($dirconfig['ssl'] == 'red'){ ?><span class="https_red">https</span><span class="https_grey">://</span><?php } ?><?php if ($dirconfig['ssl'] == 'grey'){ ?><span class="https_grey">https://</span><?php } ?><span class="url-bar tt"><?php echo $dirconfig['url']; ?></span></div></div>
+                  <div class="col-xs-8 col-md-11 col-lg-10 col-11"><div class="url_mobile"><img class="globos tt" src="/img/ssl-indicator-mobile-<?php echo $dirconfig['ssl']; ?>.png" style="max-height:1.7em;" data-placement="left"><?php if ($dirconfig['ssl'] == 'green'){ ?><span class="https_green">https://</span><?php } ?><?php if ($dirconfig['ssl'] == 'red'){ ?><span class="https_red">https</span><span class="https_grey">://</span><?php } ?><?php if ($dirconfig['ssl'] == 'grey'){ ?><span class="https_grey">https://</span><?php } ?><span class="url-bar-mobile tt"><?php echo $dirconfig['url']; ?></span></div></div>
                   <div class="col-1"><div class="hamburguer-wrapper"><img src="/img/hamburguer.png" class="hamburguer"></div></div>
                 </div>
                 <div class="row">

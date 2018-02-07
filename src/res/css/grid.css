@@ -28,6 +28,12 @@ body {
   font-family: Arial,sans-serif;
 }
 
+#url-bar-mobile, .url-bar-mobile {
+  font-family: Arial,sans-serif;
+  display: inline-flex;
+  width: 160px;
+}
+
 /*h3 {
   margin-top: 2rem;
 }*/
@@ -105,6 +111,7 @@ hr {
   padding-left: 5px;
   position: absolute;
   overflow: hidden;
+  width: 250px;
 }
 
 .html-content {
@@ -156,15 +163,18 @@ hr {
 .https_green {
   color: green;
   font-family: Arial,sans-serif;
+  display: inline-block;
 }
 
 .https_red {
   color: red;
   font-family: Arial,sans-serif;
   text-decoration: line-through;
+  display: inline-block;
 }
-
+/* comentario */
 .https_grey {
   color: grey;
   font-family: Arial,sans-serif;
+  display: inline-block;
 }
